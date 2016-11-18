@@ -1,0 +1,30 @@
+{
+  "name": "slack-deep-state",
+  "version": "1.0.0",
+  "description": "We know when you delete shit you worm",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r1b/slack-deep-state/"
+  },
+  "keywords": [
+    "slack",
+    "deep",
+    "state",
+    "trump",
+    "420",
+    "sex"
+  ],
+  "author": "Robert C Jensen <rob@computerlab.io>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "@slack/client": "^3.6.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
