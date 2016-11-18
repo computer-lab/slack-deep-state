@@ -1,6 +1,6 @@
 {
   "name": "slack-deep-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "We know when you delete shit you worm",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/r1b/slack-deep-state/"
+    "url": "https://github.com/computer-lab/slack-deep-state/"
   },
   "keywords": [
     "slack",
