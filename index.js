@@ -1,3 +1,5 @@
+'use strict';
+
 const RtmClient = require('@slack/client').RtmClient;
 const CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 const RTM_EVENTS = require('@slack/client').RTM_EVENTS;
@@ -13,8 +15,7 @@ rtm.on(CLIENT_EVENTS.RTM.AUTHENTICATED, function (rtmStartData) {
   console.log(`Logged in as ${rtmStartData.self.name} of team ${rtmStartData.team.name}`);
   rtm.on(RTM_EVENTS.MESSAGE, function (messageEvent) {
     if (messageEvent.subtype && messageEvent.subtype === 'message_deleted') {
-      let message = censor(messageEvent.previous_message.text);
-      rtm.sendMessage(message, messageEvent.channel);
+      rtm.sendMessage(censor(messageEvent.previous_message.text), messageEvent.channel);
     }
   });
 });
