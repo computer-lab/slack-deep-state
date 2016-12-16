@@ -1,6 +1,7 @@
 {
   "name": "slack-deep-state",
   "version": "1.0.1",
+  "bin": "./index.js",
   "description": "We know when you delete shit you worm",
   "main": "index.js",
   "scripts": {
