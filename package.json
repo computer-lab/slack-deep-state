@@ -1,7 +1,7 @@
 {
   "name": "slack-deep-state",
   "version": "1.2.2",
-  "bin": "./index.js",
+  "bin": "./bin/slack-deep-state.js",
   "description": "Reposts deleted slack messages with some words redacted",
   "main": "index.js",
   "scripts": {
