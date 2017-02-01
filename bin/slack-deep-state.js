@@ -10,7 +10,6 @@ const deepState = require('..');
 
 const server = http.createServer((req, res) => {
   const token = req.headers['x-slack-token'];
-  console.log(token);
   deepState(token);
   res.end();
 });
