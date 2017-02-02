@@ -1,27 +1,12 @@
 #!/usr/bin/env node
-
-if (process.argv.length < 4) {
-  console.log('usage: slack-deep-state <host> <port>');
-  process.exit(1);
-}
-
-const http = require('http');
+const readline = require('readline');
 const deepState = require('..');
 
-const server = http.createServer((req, res) => {
-  const token = req.headers['x-slack-token'];
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.on('line', (token) => {
   deepState(token);
-  res.end();
-});
-
-const host = process.argv[2];
-const port = process.argv[3];
-
-server.listen(port, host, function () {
-  console.log(`${host} ${port} starting`)
-});
-
-process.on('SIGINT', function () {
-  console.log(`${host} ${port} stopping`)
-  process.exit(0);
 });
