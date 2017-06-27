@@ -23,7 +23,8 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "@slack/client": "^3.6.1",
-    "kafka-node": "^1.4.0"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
